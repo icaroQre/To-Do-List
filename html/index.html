@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My ToDo List </title>
+    <!-- CSS project-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- JavaScript project-->
+    <script src="../js/scripts.js" defer></script>
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Style Lato-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <header class="header">
+            <p> To-Do List </p>
+        </header>
+        <form class="todo-form">
+            <header class="header-form">
+                <p> New task </p>
+            </header>
+            <div class="new-task">
+                <input type="text" class="task-input input" placeholder="Task">
+                <button type="submit" class="task-submit green-button">
+                    <i class="fa-thin fa-plus"> </i>
+                </button>
+            </div>
+        </form>
+
+        <form class="todo-edit">
+            <header class="header-form">
+                <p> Edit your task </p>
+            </header>
+            <div class="edit-task">
+                <input type="text" class="edit-input input">
+                <button type="submit" class="edit-submit blue-button">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button class="edit-cancel-btn"> Cancelar </button>
+        </form>
+
+        <div class="toolbar">
+            <header class="header-form">
+                <p> Shearch your task </p>
+            </header>
+            <div class="shearch">
+                <input type="text" class="shearch-input input" placeholder="Task">
+                <button class="shearch-erase red-button">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+            </div>
+            <div class="filter">
+                <p> Filter </p>
+                <select class="filter-select">
+                    <option value="all"> All </option>
+                    <option value="done"> Done </option>
+                    <option value="todo"> To Do </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="todo-list">
+            <p class="task"> Estudar JavaScript </p>
+            <div class="todo-list-options">
+                <button class="finish-task green-button">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-button blue-button">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-task red-button">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
