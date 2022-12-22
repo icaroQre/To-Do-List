@@ -1,32 +1,45 @@
-
+:root{
+    --white: #ffffff;
+    --green: #42E6A4;
+    --red: #EB1D36;
+    --blue: #4B56D2;
+}
 
 *{
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
     color: #393E46;
-    box-sizing: border-box;
 }
 
 body{
     background: rgb(0,0,0);
-background: linear-gradient(200deg, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 92%, rgba(60,60,60,1) 100%);
-    height: 100vh;
+    background: linear-gradient(200deg, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 92%, rgba(60,60,60,1) 100%);
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
+}
+
+.hide{
+    display: none;
 }
 
 .main-container{
-    background-color: #ffffff;
-    height: 80vh;
-    width: 40vw;
+    background-color: var(--white);
+    min-height: 70vh;
+    width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 5%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .header{
@@ -55,13 +68,13 @@ background: linear-gradient(200deg, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 92%, rgba
     padding-left: 5px;
 }
 
-.edit-cancel-btn{
+#edit-cancel-btn{
     margin-top: 1vh;
-    background-color: #ffffff;
+    background-color: var(--white);
     border: none;
     height: 25px;
     padding: 4px;
-    color: #EB1D36;
+    color: var(--red);
     font-weight: 600;
     font-size: 16px;
     transition: ease all 0.4s;
@@ -69,9 +82,9 @@ background: linear-gradient(200deg, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 92%, rgba
     align-items: center;
 }
 
-.edit-cancel-btn:hover{
-    background-color: #EB1D36;
-    color: #ffffff;
+#edit-cancel-btn:hover{
+    background-color: var(--red);
+    color: var(--white);
 }
 
 .shearch{
@@ -81,6 +94,7 @@ background: linear-gradient(200deg, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 92%, rgba
 
 .filter{
     margin-top: 1vh;
+    margin-bottom: 1vh;
     display: flex;
 }
 .filter p {
@@ -92,92 +106,106 @@ background: linear-gradient(200deg, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 92%, rgba
 .green-button {
     height: 25px;
     width: 25px;
-    border: 2px solid #6DECB9;
+    border: 2px solid var(--green);
     font-size: 1rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: ease 0.4s;
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 .green-button i{
     padding: 1px;
-    color: #6DECB9;
-    background-color: #ffffff;
+    color: var(--green);
+    background-color: var(--white);
     transition: ease 0.4s;
 }
 
 .green-button:hover {
-    background-color: #6DECB9;
+    background-color: var(--green);
 }
 .green-button:hover > i {
-    color: #ffffff;
-    background-color: #6DECB9;
+    color: var(--white);
+    background-color: var(--green);
 }
 
 /* Remove Task Button Style */
 .red-button {
     height: 25px;
     width: 25px;
-    border: 2px solid #EB1D36;
+    border: 2px solid var(--red);
     font-size: 1rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: ease 0.4s;
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 .red-button i{
     padding: 1px;
-    color: #EB1D36;
-    background-color: #ffffff;
+    color: var(--red);
+    background-color: var(--white);
     transition: ease 0.4s;
 }
 
 .red-button:hover {
-    background-color: #EB1D36;
+    background-color: var(--red);
 }
 
 .red-button:hover > i {
-    color: #ffffff;
-    background-color: #EB1D36;
+    color: var(--white);
+    background-color: var(--red);
 }
 
 /* Edit Task Button Style */
 .blue-button {
     height: 25px;
     width: 25px;
-    border: 2px solid #4B56D2;
+    border: 2px solid var(--blue);
     font-size: 0.8rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: ease 0.4s;
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 .blue-button i{
     padding: 1px;
-    color: #4B56D2;
-    background-color: #ffffff;
+    color: var(--blue);
+    background-color: var(--white);
     transition: ease 0.4s;
 }
 
 .blue-button:hover {
-    background-color: #4B56D2;
+    background-color: var(--blue);
 }
 
 .blue-button:hover > i {
-    color: #ffffff;
-    background-color: #4B56D2;
+    color: var(--white);
+    background-color: var(--blue);
 }
 
-.todo-list p{
+#todo-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo p{
     font-size: 24px;
     margin-top: 4vh;
     display: flex;
@@ -190,7 +218,30 @@ background: linear-gradient(200deg, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 92%, rgba
     align-items: center;
     justify-content: center;
     margin-top: 2vh;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 1.5vh;
 }
 .todo-list-options button {
     margin-right: 10px;
+}
+
+.done p{
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.done .todo-list-options .green-button {
+    display: none;
+}
+
+.done .todo-list-options .blue-button {
+    display: none;
+}
+
+@media(max-width: 1080px){
+    .main-container{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
 }

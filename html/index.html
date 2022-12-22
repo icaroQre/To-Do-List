@@ -19,66 +19,34 @@
     <div class="main-container">
 
         <header class="header">
-            <p> To-Do List </p>
+            <p> MyTo-Do List </p>
         </header>
-        <form class="todo-form">
+        <form id="new-task-form">
             <header class="header-form">
                 <p> New task </p>
             </header>
             <div class="new-task">
-                <input type="text" class="task-input input" placeholder="Task">
-                <button type="submit" class="task-submit green-button">
+                <input type="text" id="task-input" class="input" autocomplete="off" placeholder="Task">
+                <button id="addTaskBtn" type="submit" class="task-submit green-button">
                     <i class="fa-thin fa-plus"> </i>
                 </button>
             </div>
         </form>
 
-        <form class="todo-edit">
+        <form id="edit-task-form" class="hide">
             <header class="header-form">
                 <p> Edit your task </p>
             </header>
             <div class="edit-task">
-                <input type="text" class="edit-input input">
-                <button type="submit" class="edit-submit blue-button">
+                <input type="text" id="edit-input" autocomplete="off" class="input">
+                <button id="editSubmit" type="submit" class="edit-submit blue-button">
                     <i class="fa-solid fa-check-double"></i>
                 </button>
             </div>
-            <button class="edit-cancel-btn"> Cancelar </button>
+            <button id="edit-cancel-btn"> Cancelar </button>
         </form>
 
-        <div class="toolbar">
-            <header class="header-form">
-                <p> Shearch your task </p>
-            </header>
-            <div class="shearch">
-                <input type="text" class="shearch-input input" placeholder="Task">
-                <button class="shearch-erase red-button">
-                    <i class="fa-solid fa-delete-left"></i>
-                </button>
-            </div>
-            <div class="filter">
-                <p> Filter </p>
-                <select class="filter-select">
-                    <option value="all"> All </option>
-                    <option value="done"> Done </option>
-                    <option value="todo"> To Do </option>
-                </select>
-            </div>
-        </div>
-
-        <div class="todo-list">
-            <p class="task"> Estudar JavaScript </p>
-            <div class="todo-list-options">
-                <button class="finish-task green-button">
-                    <i class="fa-solid fa-check"></i>
-                </button>
-                <button class="edit-button blue-button">
-                    <i class="fa-solid fa-pen"></i>
-                </button>
-                <button class="remove-task red-button">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
+        <div id="todo-list">
         </div>
 
     </div>
