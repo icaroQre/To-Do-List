@@ -1,16 +1,20 @@
-# To-Do List ✔️
+# To-Do List 📖✔️
 
 <br/>
 
 ## About 
 
-The To-Do List project is a great form to pratice JavaScript and manipulation of elements in DOM.
+The To-Do List project is a great form to pratice JavaScript and manipulation of elements in DOM, with HTML5 and CSS3.
 
 <img height="350px" src="assets/images/mobile-layout.png"/>
 
+## [To See my To-Do list clike here](https://to-do-list-icaroqre.vercel.app)
+
+<br/>
+
 ## Funcionalits
 
-- The aplication contains all basics functions of a basic todo list (Add, Complete, Edit and Remove).
+- The aplication contains all functions of a basic todo list (Add, Complete, Edit and Remove).
 
 ### Add:
 
