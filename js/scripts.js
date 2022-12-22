@@ -65,6 +65,7 @@ const editTaskForm = () => {
     newTaskForm.classList.toggle("hide");
     editForm.classList.toggle("hide");
     console.log("oi");
+    editTaskInput.focus();
 }
 
 //Change task function
@@ -123,7 +124,9 @@ document.addEventListener("click", (element) => {
 editSubmitBtn.addEventListener("click", (element) => {
     element.preventDefault();
 
-    changeTask();
+    if(editTaskInput.value){
+        changeTask();
+    }
 })
 
 //Cancel edition event

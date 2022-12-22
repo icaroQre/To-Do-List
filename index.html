@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My ToDo List </title>
+    <!-- CSS project-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- JavaScript project-->
+    <script src="js/scripts.js" defer></script>
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Style Lato-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <header class="header">
+            <p> MyTo-Do List </p>
+        </header>
+        <form id="new-task-form">
+            <header class="header-form">
+                <p> New task </p>
+            </header>
+            <div class="new-task">
+                <input type="text" id="task-input" class="input" autocomplete="off" placeholder="Task">
+                <button id="addTaskBtn" type="submit" class="task-submit green-button">
+                    <i class="fa-thin fa-plus"> </i>
+                </button>
+            </div>
+        </form>
+
+        <form id="edit-task-form" class="hide">
+            <header class="header-form">
+                <p> Edit your task </p>
+            </header>
+            <div class="edit-task">
+                <input type="text" id="edit-input" autocomplete="off" class="input">
+                <button id="editSubmit" type="submit" class="edit-submit blue-button">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="edit-cancel-btn"> Cancelar </button>
+        </form>
+
+        <div id="todo-list">
+        </div>
+
+    </div>
+</body>
+</html>
